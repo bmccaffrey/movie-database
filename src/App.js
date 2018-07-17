@@ -8,6 +8,12 @@ class App extends Component {
     toggle: true
   }
 
+  toggle = () => {
+    this.setState({
+      toggle: !this.state.toggle
+    })
+  }
+
   render() {
     return (
       <div className="App">
