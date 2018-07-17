@@ -25,7 +25,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         {this.state.toggle && <p>This should show and hide</p>}
-        <button onClick={}>Show / Hide</button>
+        <button onClick={this.toggle}>Show / Hide</button>
       </div>
     );
   }
