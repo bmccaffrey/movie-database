@@ -4,6 +4,20 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    console.log('constructor');
+  }
+
+  componentWillMount() {
+    console.log('will mount');
+  }
+
+  componentDidMount() {
+    console.log('mounted');
+    
+  }
+
   state = {
     toggle: true
   }
@@ -19,7 +33,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Welcome text="Welcome to Using Props" />
+          <Welcome text="Welcome to Using Props" toggle={this.state.toggle} />
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
@@ -33,8 +47,11 @@ class App extends Component {
 
 class Welcome extends Component {
   render() {
+    const { text, toggle } = this.props;
+    console.log(toggle);
+    
     return (
-      <h1 className="App-title">{this.props.text}</h1>
+      <h1 className="App-title">{text}</h1>
     )
   }
 }
