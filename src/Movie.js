@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Movie extends Component {
   render() {
-    return <div>{this.props.movie.title}</div>;
+    return (
+      <div>
+        <h3>{this.props.movie.title}</h3>
+      </div>
+    );
   }
 }
