@@ -33,6 +33,7 @@ class App extends Component {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
           </header>
+          <Route path="/test" component={Test} />
           {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
         </div>
       </Router>
