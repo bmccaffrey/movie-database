@@ -21,7 +21,7 @@ const movies = [
 ];
 
 class App extends Component {
-  componentDidMount() {}
+  async componentDidMount() {}
 
   render() {
     return (
