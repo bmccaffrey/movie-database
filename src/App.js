@@ -4,9 +4,12 @@ import './App.css';
 import Movie from './Movie';
 
 class App extends Component {
-  state = {
-    movies: [],
-  };
+  constructor() {
+    super();
+    this.state = {
+      movies: [],
+    };
+  }
 
   async componentDidMount() {
     try {
