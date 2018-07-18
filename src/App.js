@@ -21,6 +21,10 @@ const movies = [
 ];
 
 class App extends Component {
+  state = {
+    movies: []
+  };
+
   async componentDidMount() {
     try {
       const res = await fetch(
@@ -37,6 +41,8 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.movies);
+
     return (
       <div className="App">
         <header className="App-header">
