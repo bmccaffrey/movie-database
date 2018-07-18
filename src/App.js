@@ -28,6 +28,9 @@ class App extends Component {
       );
       const movies = await res.json();
       console.log(movies);
+      this.setState({
+        movies: movies.results
+      });
     } catch (e) {
       console.log(e);
     }
