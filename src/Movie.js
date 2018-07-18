@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 export default class Movie extends Component {
   static propTypes = {
     movie: PropTypes.shape({
-      title: PropTypes.string
+      title: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired
     })
   };
 
