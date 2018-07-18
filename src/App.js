@@ -28,12 +28,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
-      </div>
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+          </header>
+          {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+        </div>
+      </Router>
     );
   }
 }
