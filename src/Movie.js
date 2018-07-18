@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 export default class Movie extends Component {
   static propTypes = {
-    movie: PropTypes.object
+    movie: PropTypes.shape({
+      title: PropTypes.string
+    })
   };
 
   render() {
