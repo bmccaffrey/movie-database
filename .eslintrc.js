@@ -18,5 +18,8 @@ module.exports = {
     sourceType: 'module'
   },
   extends: 'airbnb',
-  plugins: ['react']
+  plugins: ['react'],
+  rules: {
+    'react/jsx-filename-extension': 0
+  }
 };
