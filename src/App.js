@@ -11,6 +11,7 @@ const App = () => (
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <Switch>
+        <Route exact path="/" component={MoviesList} />
         <Route path="/test" component={Test} />
       </Switch>
     </div>
